@@ -1,0 +1,31 @@
+#include <stdio.h>
+int main() {
+
+
+    int SCARFACE;
+    int PULP_FICTION;
+    float media;
+
+
+printf ("\n De 0 a 10 qual a sua nota para o filme SCARFACE?\n");
+scanf ("%d", &SCARFACE);
+
+
+if (SCARFACE >= 5) {
+printf ("\n Que bom que gostou de SCARFACE, agora me diga qual a sua nota para PULP FICTION \n");
+scanf ("%d", &PULP_FICTION);
+}
+else {
+printf ("\n Que pena que nao gostou dessa obra de Tarantino!\n");
+}
+if (PULP_FICTION >=5) {
+    printf ("\nFico feliz, por saber que gostou dessas obras de Tarantino! Agora digite qualquer tecla para verificarmos a media das suas notas!!\n");
+    scanf ("%f", &media);
+}
+else {
+    printf("\nQue pena que não gostou dessa obra de Tarantino!\n");
+}
+media = (SCARFACE + PULP_FICTION) / 2.0;
+printf ("\nSua media foi : %.2f, media\n");
+return 0;
+}
